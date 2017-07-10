@@ -20,8 +20,11 @@ The stable matching constraint makes sense because if a blocking pair (C, G) exi
 companies. You may assume that at most 1000 companies will participate in the placement this year. Examples of this instruction is given below:
 
 ADD COMPANY C1, Google, 5
+
 ADD COMPANY C2, Amazon, 10
+
 ADD COMPANY C3, Microsoft, 7
+
 ADD COMPANY C4, Flipkart, 15
 
 (Google is given companyID C1 and its hiring capacity is 5).
@@ -29,6 +32,7 @@ ADD COMPANY C4, Flipkart, 15
 • Add a graduate: This adds a graduate to the system. These instructions should succeed the previous instructions (add a company) and precede all other instructions. You may assume that at most 5000 graduates will participate in placements this year. Examples of this instruction is given below:
 
 ADD GRADUATE 2013CS10001, Aakash, 9.1, C1, C2, C3
+
 ADD GRADUATE 2013CS10002, Aastha, 9.3, C2, C1, C3
 
 (Aakash is a graduating student with entry no. 2013CS10001 and CGPA 9.1. His first preference
@@ -37,6 +41,7 @@ is Google followed by Amazon and Microsoft)
 • Add company’s ranking of interested graduates: Every participating company uses their own metric to evaluate interested graduates and ranks them (in decreasing order of preference). This ranking should be entered into the system. Example of this instruction is given below:
 
 RANK GRADUATES C1, 2013CS10001, 2013CS10002
+
 RANK GRADUATES C2, 2013CS10002, 2013CS10001
 (Google prefers Aakash to Aastha whereas Amazon prefers Aastha to Aakash)
 
